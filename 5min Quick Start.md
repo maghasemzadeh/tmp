@@ -9,9 +9,9 @@
 
 ## 2. دانلود کلاینت مورد نظر
 از بین ۳ زبان کلاینت موجود در مسابقه، یک زبان را انتخاب کرده و آن را از مخزن مربوطه دانلود نمایید. سپس آن را unzip کنید.
-  * [کلاینت Cpp](https://github.com/SharifAIChallenge/AIC20-Client-Cpp)
-  * [کلاینت Java](https://github.com/SharifAIChallenge/AIC20-Client-Java)
-  * [کلاینت Python](https://github.com/SharifAIChallenge/AIC20-Client-Python)
+  * [کلاینت Cpp](https://github.com/SharifAIChallenge/AIC21-Client-Cpp)
+  * [کلاینت Java](https://github.com/SharifAIChallenge/AIC21-Client-Java)
+  * [کلاینت Python](https://github.com/SharifAIChallenge/AIC21-Client-Python)
 
 
 
