@@ -14,7 +14,7 @@
 
 `File --> Project Structure --> Project Settings --> Artifacts --> green plus sign --> Jar --> From modules with dependencies`
 
-![jar](https://github.com/maghasemzadeh/tmp/blob/main/jar.png)
+![jar](https://github.com/maghasemzadeh/tmp/blob/main/jar.png?raw=true)
 
 هر بار که تغییری در کد کلاینت داده شد، برای اجرا باید یک فایل jar تازه ساخته‌شود. مراحل ساخت فایل jar و اطلاعات بیشتر را در [داکیومنتیشن Intellij](https://www.jetbrains.com/help/idea/compiling-applications.html#compile_module) و همچنین [این پست در Stack Overflow](https://stackoverflow.com/questions/1082580/how-to-build-jars-from-intellij-properly) نیز می‌توانید مشاهده کنید.
 
