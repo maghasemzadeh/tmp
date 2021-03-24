@@ -12,12 +12,12 @@
 * باقی خانه‌های زمین، خانه‌های خالی هستند که مورچه‌ها می‌توانند در آن‌ها قرار بگیرند.
   
   
-![cells](https://github.com/maghasemzadeh/tmp/blob/main/Cells.png)
+![cells](https://github.com/maghasemzadeh/tmp/blob/main/Cells.png?raw=true)
 
 ## منابع زمین
 * دو نوع منبع (نان و علف) در زمین موجود است. منابع در خانه‌های خالی قرار می‌دارند. پس از برداشت هر مورچه یک واحد از آن منبع کاهش پیدا می‌کند؛ هرگز در یک خانه دو نوع منبع قرار نمی‌گیرد (از آن جا که منبع در خانه‌ی خالی است، قرار گرفتن و عبور مورچه از خانه منبع بلامانع است).
 
-![resources](https://github.com/maghasemzadeh/tmp/blob/main/Resources.png)
+![resources](https://github.com/maghasemzadeh/tmp/blob/main/Resources.png?raw=true)
 
 ## نیروها
 ### مورچه‌ی کارگر
@@ -28,7 +28,7 @@
   * عدد روی آن‌ها نیز بیان‌گر  id آن مورچه است.
 
   
-![ants](https://github.com/maghasemzadeh/tmp/blob/main/Ants.png)
+![ants](https://github.com/maghasemzadeh/tmp/blob/main/Ants.png?raw=true)
 
 ### عقرب سرباز
   * .جون اولیه: در هنگام تولید جونی برابر با health_sarbaz دارد.
@@ -37,7 +37,7 @@
   * نوار قرمز رنگ کنار عقرب‌ها نشان‌دهنده‌ی سلامتی سرباز است.
   * عدد روی سرباز بیان‌گر id سرباز می‌باشد.  
   
-![scorpions](https://github.com/maghasemzadeh/tmp/blob/main/Scorpions.png)
+![scorpions](https://github.com/maghasemzadeh/tmp/blob/main/Scorpions.png?raw=true)
 
 
 ### مشخصات
