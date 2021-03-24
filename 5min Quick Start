@@ -1,15 +1,15 @@
 # شروع بازی در ۵ دقیقه
-در این مستند، قصد داریم تا نجوه اجرای بازی AIC2021 را در تنها ۵ دقیقه آموزش دهیم. علاوه بر آن، راهنمایی‌هایی برای ادامه کد زدن روی کلاینت‌ها برای بعد از این شروع نیز گفته می‌شود.
+در این مستند، قصد داریم تا نحوه‌ی اجرای بازی AIC2021 را در تنها ۵ دقیقه آموزش دهیم. علاوه بر آن، راهنمایی‌هایی برای ادامه کد زدن روی کلاینت‌ها برای بعد از این شروع نیز گفته می‌شود.
 
 1. دانلود فولدر بازی:
-ابتدا باید فولدر بازی را از (مخزن رویداد)[https://github.com/SharifAIChallenge/AIC21-Game] دانلود نمایید. سپس، آن را unzip کنید.
+ابتدا باید فولدر بازی را از ]مخزن رویداد[(https://github.com/SharifAIChallenge/AIC21-Game) دانلود نمایید. سپس، آن را unzip کنید.
 
 
 2. دانلود کلاینت مورد نظر:
 از بین ۳ زبان کلاینت موجود در مسابقه، یک زبان را انتخاب کرده و آن را از مخزن مربوطه دانلود نمایید. سپس آن را unzip کنید.
-- ( کلاینت C++)[https://github.com/SharifAIChallenge/AIC20-Client-Cpp]
-- ( کلاینت Java)[https://github.com/SharifAIChallenge/AIC20-Client-Java]
-- ( کلاینت Python)[https://github.com/SharifAIChallenge/AIC20-Client-Python]
+- [کلاینت C++](https://github.com/SharifAIChallenge/AIC20-Client-Cpp)
+- [کلاینت Java](https://github.com/SharifAIChallenge/AIC20-Client-Java)
+- [کلاینت Python](https://github.com/SharifAIChallenge/AIC20-Client-Python)
 
 3. اجرای بازی:
 در ویندوز، cmd و در سیستم عامل‌های دیگر، terminal را باز کنید. ابتدا با اجرای کد زیر مطمئن شوید که java را به صورت نصب دارید.
