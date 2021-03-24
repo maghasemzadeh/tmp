@@ -4,14 +4,15 @@
 
 ## 1. دانلود فولدر بازی
 ابتدا باید فولدر بازی را از [مخزن فولدر بازی رویداد](https://github.com/SharifAIChallenge/AIC21-Game) دانلود نمایید. سپس، آن را unzip کنید.
+![AIC21-Game](https://github.com/maghasemzadeh/tmp/blob/main/game-doc.png)
 
 
 
 ## 2. دانلود کلاینت مورد نظر
 از بین ۳ زبان کلاینت موجود در مسابقه، یک زبان را انتخاب کرده و آن را از مخزن مربوطه دانلود نمایید. سپس آن را unzip کنید.
-  * [کلاینت Cpp](https://github.com/SharifAIChallenge/AIC20-Client-Cpp)
-  * [کلاینت Java](https://github.com/SharifAIChallenge/AIC20-Client-Java)
-  * [کلاینت Python](https://github.com/SharifAIChallenge/AIC20-Client-Python)
+  * [کلاینت Cpp](https://github.com/SharifAIChallenge/AIC21-Client-Cpp)
+  * [کلاینت Java](https://github.com/SharifAIChallenge/AIC21-Client-Java)
+  * [کلاینت Python](https://github.com/SharifAIChallenge/AIC21-Client-Python)
 
 
 
