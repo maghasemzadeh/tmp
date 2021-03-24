@@ -12,7 +12,7 @@
 
 کلاینت‌های جاوا، برای اجرا توسط سرور، باید به فایل jar تبدیل شوند. برای ساخت فایل jar کلاینت جاوا، باید از Intellij استفاده کنید. در Intellij، از مسیر زیر می‌توانید فایل jar رابسازید.  
 
-`File --> Project Structure --> Project Settings --> Artifacts --> green plus sign --> Jar --> From modules with dependencies`
+```File --> Project Structure --> Project Settings --> Artifacts --> green plus sign --> Jar --> From modules with dependencies```
 
 ![jar](https://github.com/maghasemzadeh/tmp/blob/main/jar.png?raw=true)
 
@@ -33,21 +33,21 @@
 # اجرای سرور
 
 برای اجرای سرور آخرین نسخه ریلیز سرور را از این ریپو دانلود کنید (فایل server.jar). سپس سرور را به این شکل اجرا کنید:  
-`java -jar server.jar --first-team=/path/to/first/client --second-team=/path/to/second/client`
+```java -jar server.jar --first-team=/path/to/first/client --second-team=/path/to/second/client```
   
 در بالا دو آرگومان اول محل قرار گیری فایل کلاینت برای تیم اول و تیم دوم را مشخص می کنند. این فایل برای کلاینت جاوا همان فایل jar تولید شده است ، برای کلاینت پایتون خروجی باینری و برای کلاینت cpp همان خروجی حاصل از بیلد گرفتن کلاینت است.  
   
 دقت کنید که اگر فایل کلاینت شما در پوشه سرور قرار دارد (مثلا نام آن client است) از ./ در ابتدای آن استفاده کنید:  
-`--first-team=./client`
+```--first-team=./client```
 
-برای نمایش لاگ بیشتر از سرور جهت دیباگ کردن (و همچنین نمایش خروجی کلاینت ها در لاگ سرور) از آرگومان `--show-log` نیز  می‌توانید استفاده کنید.  
+برای نمایش لاگ بیشتر از سرور جهت دیباگ کردن (و همچنین نمایش خروجی کلاینت ها در لاگ سرور) از آرگومان ```--show-log``` نیز  می‌توانید استفاده کنید.  
 مثال:   
 `java -jar server.jar --first-team=/path/to/first/client --second-team=/path/to/second/client --show-log`
   
-با استفاده از آرگومان `--max-agent` می توانید یک کران بالا برای تعداد نیرو های ساخته شد (instance های اجرایی از کلاینت) تعیین کنید تا سیستم شما دچار مشکل در اجرا نشود (پیشنهاد ما حداکثر ۵۰ است)
+با استفاده از آرگومان ```--max-agent``` می توانید یک کران بالا برای تعداد نیرو های ساخته شد (instance های اجرایی از کلاینت) تعیین کنید تا سیستم شما دچار مشکل در اجرا نشود (پیشنهاد ما حداکثر ۵۰ است)
 
 مثال:  
- `java -jar server.jar --first-team=/path/to/first/client --second-team=/path/to/second/client --max-agent=20`  
+ ```java -jar server.jar --first-team=/path/to/first/client --second-team=/path/to/second/client --max-agent=20```
  این مقدار به طور پیش فرض 200 در نظر گرفته می شود.
 در صورت تمایل به اجرای کلاینت ها بصورت دستی، می توانید از آرگومان `--run-manually` استفاده کنید. در این صورت هر موقع سرور منتظر وصل شدن کلاینت جدید ماند، باید یک instance از کلاینت خود را دستی اجرا کنید. در این صورت می توانید به طور کامل لاگ کلاینت را در کنسول مشاهده کنید. (در این صورت توصیه می شود از اعداد کوچک برای `inital_ant_num` در `map.config` استفاده کنید.)
 
