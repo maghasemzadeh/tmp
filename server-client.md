@@ -12,7 +12,7 @@
 
 کلاینت‌های جاوا، برای اجرا توسط سرور، باید به فایل jar تبدیل شوند. برای ساخت فایل jar کلاینت جاوا، باید از Intellij استفاده کنید. در Intellij، از مسیر زیر می‌توانید فایل jar رابسازید.  
 
-```File --> Project Structure --> Project Settings --> Artifacts --> green plus sign --> Jar --> From modules with dependencies```
+`File --> Project Structure --> Project Settings --> Artifacts --> green plus sign --> Jar --> From modules with dependencies`
 
 ![jar](https://github.com/maghasemzadeh/tmp/blob/main/jar.png?raw=true)
 
@@ -33,21 +33,21 @@
 # اجرای سرور
 
 برای اجرای سرور آخرین نسخه ریلیز سرور را از این ریپو دانلود کنید (فایل server.jar). سپس سرور را به این شکل اجرا کنید:  
-```java -jar server.jar --first-team=/path/to/first/client --second-team=/path/to/second/client```
+`java -jar server.jar --first-team=/path/to/first/client --second-team=/path/to/second/client`
   
 در بالا دو آرگومان اول محل قرار گیری فایل کلاینت برای تیم اول و تیم دوم را مشخص می کنند. این فایل برای کلاینت جاوا همان فایل jar تولید شده است ، برای کلاینت پایتون خروجی باینری و برای کلاینت cpp همان خروجی حاصل از بیلد گرفتن کلاینت است.  
   
 دقت کنید که اگر فایل کلاینت شما در پوشه سرور قرار دارد (مثلا نام آن client است) از ./ در ابتدای آن استفاده کنید:  
-```--first-team=./client```
+`--first-team=./client`
 
-برای نمایش لاگ بیشتر از سرور جهت دیباگ کردن (و همچنین نمایش خروجی کلاینت ها در لاگ سرور) از آرگومان ```--show-log``` نیز  می‌توانید استفاده کنید.  
+برای نمایش لاگ بیشتر از سرور جهت دیباگ کردن (و همچنین نمایش خروجی کلاینت ها در لاگ سرور) از آرگومان `--show-log` نیز  می‌توانید استفاده کنید.  
 مثال:   
 `java -jar server.jar --first-team=/path/to/first/client --second-team=/path/to/second/client --show-log`
   
 با استفاده از آرگومان ```--max-agent``` می توانید یک کران بالا برای تعداد نیرو های ساخته شد (instance های اجرایی از کلاینت) تعیین کنید تا سیستم شما دچار مشکل در اجرا نشود (پیشنهاد ما حداکثر ۵۰ است)
 
 مثال:  
- ```java -jar server.jar --first-team=/path/to/first/client --second-team=/path/to/second/client --max-agent=20```
+ `java -jar server.jar --first-team=/path/to/first/client --second-team=/path/to/second/client --max-agent=20`
  این مقدار به طور پیش فرض 200 در نظر گرفته می شود.
 در صورت تمایل به اجرای کلاینت ها بصورت دستی، می توانید از آرگومان `--run-manually` استفاده کنید. در این صورت هر موقع سرور منتظر وصل شدن کلاینت جدید ماند، باید یک instance از کلاینت خود را دستی اجرا کنید. در این صورت می توانید به طور کامل لاگ کلاینت را در کنسول مشاهده کنید. (در این صورت توصیه می شود از اعداد کوچک برای `inital_ant_num` در `map.config` استفاده کنید.)
 
@@ -79,3 +79,100 @@
 + در هنگام اجرای سرور حتما به درست وارد کردن آدرس کلاینت های بازی دقت کنید!
 
 + برای مطمین شدن از این که سرور کار خود را با موفقیت به پایان رسانده است، در خروجی باید winner مشخص شده باشد. (نه لزوما خط آخر)
+
+# توابع و کلاس‌های اصلی کلاینت
+
+`Answer turn(World)`
+
+این تابع در هر نوبت بازی صدا زده می شود. هر نیرو در آن نوبت یک شی Answer تولید می‌کند که از جهت حرکت نیرو و پیام (در صورت ارسال پیام) و ارزش آن تشکیل شده است.  
+
+### World/Game
+
+`Ant getAnt()`
+اطلاعات آن نیرو را برمی‌گرداند.
+
+`AntType getAntType()`
+
+نوع نیرو فعلی را برمی گرداند که یکی از دو حالت SARBAAZ و یا KARGAR است.
+
+`ChatBox getChatBox()`
+
+اطلاعات چت باکس تیم نیرو فعلی را بر می‌گرداند. ( لیستی از پیام ها و نوبتی که در آن پیام ارسال شده است)
+
+`int getMapWidth()`
+
+عرض زمین بازی را برمی گرداند.
+
+`int getMapHeight()`
+
+ارتفاع زمین بازی را برمی گرداند.
+
+`int getBaseX()`
+
+مختصات X پایگاه تیم نیرو فعلی را بر می گرداند.
+
+`int getBaseY()`
+
+مختصات Y پایگاه تیم نیرو فعلی را بر می گرداند.
+
+`int getHealthKargar()`
+
+مقدار جان اولیه کارگر را بر می گرداند.
+
+`int getHealthSarbaaz()`
+
+مقدار جان اولیه نیرو های سرباز را بر می گرداند.
+
+`int getAttackDistance()`
+
+فاصله منهتنی برای حمله نیرو سرباز را برمی گرداند.
+
+`int getGenerateKargar()`
+
+مقدار منبع مورد نیاز برای تولید کارگر را برمی گرداند.
+
+`int getGenerateSarbaaz()`
+
+مقدار منبع مورد نیاز برای تولید سرباز را برمی گرداند.
+
+`int getRateDeathResource()`
+
+مقدار پارامتر RateDeathResource را برمی گرداند.
+
+### Ant
+
+`Cell getMapCell(int xStep, int yStep)`
+
+خانه مربوطه بر روی نقشه را در صورتی که در دید نیرو باشد (view_distance) بر می گرداند. (اگر در دید نیرو فعلی نباشد، این مقدار null بر می گرداند)
+
+`int getXCoordinate() `
+
+مختصات X خانه فعلی نیرو را بر می گرداند.
+
+`int getYCoordinate() `
+
+مختصات Y خانه فعلی نیرو را بر می گرداند.
+
+`AntType getType()`
+
+نوع نیرو فعلی را بر می گرداند
+
+`AntTeam getTeam()`
+
+تیم نیرو را بر می گرداند. (شی Ant برای نیرو های خانه های همسایه نیز قابل استفاده است).
+
+* ALLIED → هم تیمی نیرو فعلی
+
+* ENEMY → تیم مقابل نیرو فعلی
+
+`Resource getCurrentResource()`
+
+مقدار و نوع منبعی که نیرو فعلی حمل می کند را بر می گرداند.
+
+`int getHealth()`
+
+میزان جان مورجه فعلی را بر می گرداند.
+
+`getViewDistance()`
+
+مقدار پارامتر view distance را برای نیرو فعلی بر می گرداند.
