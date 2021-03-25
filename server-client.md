@@ -31,7 +31,7 @@
 دقت کنید که پس از هر بار تغییر در کد، پوشه های build و dist را پاک کنید و مجددا با PyInstaller بیلد بگیرید.
 
 # کلاینت سی‌پی‌پی
-## Unix ‌Based Operating Systems
+## Unix ‌Based
 برای دریافت و اجرای کلاینت، دستورات زیر را اجرا کنید.
 ```
 cd path/to/working/directory
